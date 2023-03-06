@@ -7,10 +7,12 @@
 }
 
 .sidebar {
-  background-color: rgba(219, 219, 219, 0.753);
-  width: 300px;
+  position: absolute;
+  background-color: rgb(219, 219, 219);
+  /*width: 300px;*/
   font-family: "Nanum Gothic Coding", monospace;
   height: 100vh;
+  transition: transform 0.35s ease-in;
 }
 
 .sidebar nav {
@@ -47,6 +49,7 @@
 }
 
 .devinfo {
+  font-size: 16px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -54,19 +57,19 @@
 }
 
 .hello {
-  font-size: 45px;
+  font-size: 3em;
 }
 .name {
-  font-size: 60px;
+  font-size: 3em;
   font-weight: bold;
   font-family: "Nanum Gothic Coding", monospace;
 }
 .about {
-  font-size: 30px;
+  font-size: 2.5em;
 }
 
 .aboutMe {
-  font-size: 20px;
+  font-size: 2.2em;
   margin-top: 20px;
   font-weight: 200;
   font-family: "Nanum Gothic Coding", monospace;
@@ -74,16 +77,17 @@
 
 .buttons {
   margin-top: 30px;
+  font-size: 10px;
 }
 
 .btn {
   padding: 10px;
-  border-radius: 5pc;
+  border-radius: 5px;
   color: white;
   background-color: dodgerblue;
   font-weight: bold;
-  font-size: 12px;
-  margin: 0 2;
+  font-size: 2em;
+  margin: 3px 3px;
   cursor: pointer;
 }
 
@@ -100,4 +104,39 @@
 
 .devpic img {
   height: 55vh;
+}
+
+.sidebarGo{
+  transform: translate(-443px, 0px);
+  position: absolute;
+}
+
+.hamburger{
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 10px;
+}
+
+.cross{
+  margin-left: 200px;
+}
+
+
+@media (max-width: 1615px) {
+  .devpic{
+    display: none;
+  }
+
+
+  .devinfo{
+    font-size: 10px;
+    margin: 0px 8px;
+  }
+
+  .buttons{
+    font-size: 5px;
+    margin-top: 20px;
+  }
+  
 }

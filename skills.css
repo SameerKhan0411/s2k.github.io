@@ -7,10 +7,13 @@
 }
 
 .sidebar {
-  background-color: rgba(219, 219, 219, 0.753);
-  width: 300px;
+  font-size: 16px;
+  position: absolute;
+  background-color: rgb(219, 219, 219);
+  /*width: 300px;*/
   font-family: "Nanum Gothic Coding", monospace;
   height: 100vh;
+  transition: transform 0.35s ease-in;
 }
 
 .sidebar nav {
@@ -19,7 +22,7 @@
 
 .sidebar nav li {
   list-style: none;
-  font-size: 30px;
+  font-size: 3em;
   padding: 33px 0;
 }
 
@@ -31,9 +34,9 @@
 .main {
   /*background-color: rgba(236, 228, 156, 0.733);*/
   width: 85vw;
-  background-image: url(img/kelly-sikkema-tk9RQCq5eQo-unsplash.jpg);
+  /*background-image: url(img/kelly-sikkema-tk9RQCq5eQo-unsplash.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 .container {
@@ -41,6 +44,7 @@
 }
 
 .skillContainer {
+  font-size: 16px;
   /*background-color: rgba(224, 184, 190, 0.39);*/
   height: 55vh;
   width: 80vw;
@@ -54,56 +58,47 @@
     justify-content: center;
     flex-direction: column;
     font-family: "Source Code Pro", monospace;
-    color: rgb(255, 254, 254);
+    color: black;
 }
 
 .head {
   padding: 10px 0 10px 0;
-  font-size: 30px;
+  font-size: 2.5em;
   font-family: "Source Code Pro", monospace;
 }
 
-.devinfo {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-family: "Source Code Pro", monospace;
+.sidebarGo{
+  transform: translate(-443px, 0px);
+  position: absolute;
 }
 
-.hello {
-  font-size: 45px;
-}
-.name {
-  font-size: 60px;
-  font-weight: bold;
-  font-family: "Nanum Gothic Coding", monospace;
-}
-.about {
-  font-size: 30px;
-}
-
-.buttons {
-  margin-top: 30px;
-}
-
-.btn {
-  padding: 10px;
-  border-radius: 5pc;
-  color: white;
-  background-color: dodgerblue;
-  font-weight: bold;
-  font-size: 12px;
-  margin: 0 2;
+.hamburger{
+  position: absolute;
   cursor: pointer;
+  top: 10px;
+  left: 10px;
 }
 
-.btn-sm {
-  font-size: 15px;
-  padding: 10px 19px;
-  margin: 12px 0;
+.cross{
+  margin-left: 200px;
 }
 
-.btn:hover {
-  background-color: white;
-  color: dodgerblue;
+
+@media (max-width: 1615px) {
+  .sidebar{
+    font-size: 10px;
+  }
+
+  .devpic{
+    display: none;
+  }
+
+  .skillContainer{
+    font-size: 12px;
+    margin: 40px 60px;
+  }
+  
+  .skills{
+    margin: 20px 10px;
+  }
 }
