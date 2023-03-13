@@ -6,10 +6,16 @@
   padding: 0;
 }
 
+.background{
+  background-image: linear-gradient(to bottom,  #065488,#6dd5fa,#ffffff);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 .sidebar {
   position: absolute;
-  background-color: rgb(219, 219, 219);
-  /*width: 300px;*/
+  background-color: #6dd5fa;
   font-family: "Nanum Gothic Coding", monospace;
   height: 100vh;
   transition: transform 0.35s ease-in;
